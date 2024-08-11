@@ -88,17 +88,17 @@ async function createPost() {
 // get list of posts from the database return created_by get from user_id column of posts table
 const posts = ref([])
 
-try {
-  const data = useFetch('/api/posts')
+// try {
+//   const data = useFetch('/api/posts')
   
-if (error) {
-  alert(error.message)
-} else {
-  posts.value = postsData
-}
-} catch (error) {
-  console.log(error)
-}
+// if (error) {
+//   alert(error.message)
+// } else {
+//   posts.value = postsData
+// }
+// } catch (error) {
+//   console.log(error)
+// }
 
 
 </script>

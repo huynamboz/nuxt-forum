@@ -7,7 +7,7 @@ import Sidebar from '~/components/layouts/Sidebar.vue'
     <Header />
     <div class="flex flex-auto overflow-hidden items-stretch">
       <Sidebar />
-      <div class="flex-auto overflow-auto">
+      <div class="flex-auto overflow-y-auto overflow-x-hidden">
         <slot />
       </div>
     </div>

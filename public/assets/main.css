@@ -5,3 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.avatar img {
+    border-radius: 6px;
+}
