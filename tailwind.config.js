@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+// nuxtjs
 export default {
   content: [
-    "./index.html",
-    "./**/*.{js,ts,jsx,tsx, vue}",
+    "./components/**/*.{vue,js}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
   ],
   theme: {
     extend: {},
