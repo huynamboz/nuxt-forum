@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     config: {},
     viewer: true,
   },
+  vite: {
+    define: { global: 'window' },
+  },
   css: ['@/public/assets/main.css'],
   supabase: {
     // Options
