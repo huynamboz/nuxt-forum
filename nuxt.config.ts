@@ -11,8 +11,11 @@ export default defineNuxtConfig({
     config: {},
     viewer: true,
   },
+  $development: {
   vite: {
-    define: { global: 'window' },
+    define: {
+      global: 'window'
+    },
   },
   css: ['@/public/assets/main.css'],
   supabase: {
