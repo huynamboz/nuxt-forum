@@ -8,9 +8,9 @@ export default defineNuxtConfig({
   },
   vite: {
     define: {
-      global: "window",
+      "window.global": {},
     },
-},
+  },
   css: ['@/public/assets/main.css'],
   supabase: {
     // Options
