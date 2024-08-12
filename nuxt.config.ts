@@ -7,12 +7,8 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config',
   },
   vite: {
-    optimizeDeps: {
-        esbuildOptions: {
-            define: {
-                global: 'globalThis'
-            },
-        }
+    define: {
+      global: "window",
     },
 },
   css: ['@/public/assets/main.css'],
