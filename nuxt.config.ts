@@ -5,17 +5,16 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
     configPath: 'tailwind.config',
-    exposeConfig: {
-      level: 2
-    },
-    config: {},
-    viewer: true,
   },
   vite: {
-    define: {
-      "global": {},
+    optimizeDeps: {
+        esbuildOptions: {
+            define: {
+                global: 'globalThis'
+            },
+        }
     },
-  },
+},
   css: ['@/public/assets/main.css'],
   supabase: {
     // Options
