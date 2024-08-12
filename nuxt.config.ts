@@ -17,6 +17,7 @@ export default defineNuxtConfig({
       global: 'window'
     },
   },
+},
   css: ['@/public/assets/main.css'],
   supabase: {
     // Options
